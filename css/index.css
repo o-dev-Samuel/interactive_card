@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#containercard {
+    background-image: url('../img/main-mobile.png');
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    width: 250px;
+    height: 137px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#cardback {
+    right: 15px;
+    bottom: 45px;
+    background-image: url('../img/card-back1.png');
+}
+
+#cardfront {
+    left: 15px;
+    bottom: -35px;
+    background-image: url('../img/card-front1.png');
+    z-index: 1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
