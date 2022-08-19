@@ -13,24 +13,49 @@
 
 .card {
     position: absolute;
-    width: 250px;
-    height: 137px;
+    width: 300px;
+    height: 164px;
     background-color: aqua;
     border-radius: 10px;
 }
 
 #cardback {
     right: 15px;
-    bottom: 45px;
-    background-image: url('../img/card-back1.png');
+    bottom: 25px;
+    background-image: url('../img/card-back.png');
 }
 
 #cardfront {
     left: 15px;
-    bottom: -35px;
-    background-image: url('../img/card-front1.png');
+    bottom: -70px;
+    background-image: url('../img/card-front.png');
     z-index: 1;
 }
+
+.logocard{
+    margin: 10px;
+}
+
+#cardfront div{
+    color: rgb(211, 207, 207);
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 45%;
+    margin-inline: 3%;
+}
+
+#numcard{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 10%;
+}
+
+
+
 
 .attribution {
     font-size: 11px;
@@ -40,4 +65,12 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+#cardcod{
+    color: rgb(236, 234, 234);
+    float: right;
+    margin-top: 23%;
+    margin-right: 12%;
+    font-size: 20px;
 }
