@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <title>Interactive card</title>
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
 
 </head>
 
@@ -43,31 +43,27 @@
 
   </div>
 
-  <div class="form">
-    Titular do cartão
-    <label for="cardnameinput"></label>
-    <input type="text" name="cardnameinput" id="cardnameinput" class="inputmaior">
+  <form method="post">
+    <label for="cardnameinput">Titular do cartão</label>
+    <input type="text" name="cardnameinput" id="cardnameinput" class="inputmaior" placeholder="Ex: Samuel Carvalho">
 
-    Número do cartão
-    <label for="cardnumberinput"></label>
-    <input type="number" name="cardnumberinput" id="cardnumberinput" class="inputmaior">
+    <label for="cardnumberinput">Número do cartão</label>
+    <input type="text" name="cardnumberinput" id="cardnumberinput" class="inputmaior" placeholder="Ex: 0000 0000 0000 0000">
 
    <div class="expedicao">
-    Validade
-    <input type="number" name="cardmesinput" id="cardmesinput" class="inputmenor">
+    <label for="cardmesinput">Validade: MM/AA</label>
+    <input type="text" name="cardmesinput" id="cardmesinput" class="inputmenor" placeholder="MM">
 
-    <input type="number" name="caranoinput" id="cardanoinput" class="inputmenor">
+    <input type="text" name="cardanoinput" id="cardanoinput" class="inputmenor" placeholder="AA">
    </div>
 
    <div class="inputcod">
-    CVC
-    <input type="number" name="carcodinput" id="cardcodinput">
+    <label for="cardcodinput">CVC</label>
+    <input type="text" name="carcodinput" id="cardcodinput" placeholder="Ex:123">
+
    </div>
-
-    
-
-
-  </div>
+   <input type="button" value="Confirmar" class="inputmaior" id="btnconfirmar">
+  </form>
 
   <div class="attribution">
 

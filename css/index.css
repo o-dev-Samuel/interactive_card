@@ -76,7 +76,7 @@
     font-size: 20px;
 }
 
-.form{
+form{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -89,10 +89,16 @@
 
 }
 
-.form input{
+form input{
     height: 40px;
     border-radius: 10px;
-    border: solid 1px rgb(121, 117, 117);
+    border: solid 1px rgb(165, 165, 165);
+    padding: 10px;
+    
+}
+
+form label{
+    font-size: 14px;
 }
 
 .inputmaior{
@@ -103,7 +109,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 40%;
+    width: 45%;
     
 }
 
@@ -115,9 +121,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 56%;
+    width: 51%;
 }
 
 #cardcodinput{
 width: 100%;
+}
+
+#btnconfirmar{
+    background-color: rgb(24, 3, 44);
+    color: #fff;
+    margin-top: 20px;
 }
