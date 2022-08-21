@@ -17,32 +17,61 @@
 
     <div class="card" id="cardfront">
       <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg" class="logocard">
-        
-        <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/>
-        
-        <path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/>
-      
+
+        <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+
+        <path
+          d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+          stroke="#fff" />
+
       </svg>
 
       <div class="dados">
         <div id="numcard">0000 0000 0000 0000</div>
 
         <div id="cardname" class="block">Samuel Carvalho</div>
-  
+
         <div id="carddate" class="block">00/00</div>
       </div>
 
 
     </div>
 
-    <div class="card" id="cardback" >
+    <div class="card" id="cardback">
       <div id="cardcod">000</div>
     </div>
 
   </div>
 
+  <div class="form">
+    Titular do cartão
+    <label for="cardnameinput"></label>
+    <input type="text" name="cardnameinput" id="cardnameinput" class="inputmaior">
+
+    Número do cartão
+    <label for="cardnumberinput"></label>
+    <input type="number" name="cardnumberinput" id="cardnumberinput" class="inputmaior">
+
+   <div class="expedicao">
+    Validade
+    <input type="number" name="cardmesinput" id="cardmesinput" class="inputmenor">
+
+    <input type="number" name="caranoinput" id="cardanoinput" class="inputmenor">
+   </div>
+
+   <div class="inputcod">
+    CVC
+    <input type="number" name="carcodinput" id="cardcodinput">
+   </div>
+
+    
+
+
+  </div>
 
   <div class="attribution">
+
+
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
