@@ -48,21 +48,21 @@
     <input type="text" name="cardnameinput" id="cardnameinput" class="inputmaior" placeholder="Ex: Samuel Carvalho">
 
     <label for="cardnumberinput">Número do cartão</label>
-    <input type="text" name="cardnumberinput" id="cardnumberinput" class="inputmaior" placeholder="Ex: 0000 0000 0000 0000">
+    <input type="number" name="cardnumberinput" id="cardnumberinput" class="inputmaior" placeholder="Ex: 0000 0000 0000 0000" maxlength="10">
 
    <div class="expedicao">
     <label for="cardmesinput">Validade: MM/AA</label>
-    <input type="text" name="cardmesinput" id="cardmesinput" class="inputmenor" placeholder="MM">
+    <input type="number" name="cardmesinput" id="cardmesinput" class="inputmenor" placeholder="MM">
 
-    <input type="text" name="cardanoinput" id="cardanoinput" class="inputmenor" placeholder="AA">
+    <input type="number" name="cardanoinput" id="cardanoinput" class="inputmenor" placeholder="AA">
    </div>
 
    <div class="inputcod">
     <label for="cardcodinput">CVC</label>
-    <input type="text" name="carcodinput" id="cardcodinput" placeholder="Ex:123">
+    <input type="number" name="carcodinput" id="cardcodinput" placeholder="Ex:123">
 
    </div>
-   <input type="button" value="Confirmar" class="inputmaior" id="btnconfirmar">
+   <input type="button" value="Confirmar" class="inputmaior" id="btnconfirmar" onclick="confirmar()">
   </form>
 
   <div class="attribution">

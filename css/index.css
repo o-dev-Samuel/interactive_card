@@ -33,22 +33,22 @@
     z-index: 1;
 }
 
-.logocard{
+.logocard {
     margin: 10px;
 }
 
-#cardfront div{
+#cardfront div {
     color: rgb(211, 207, 207);
 }
 
-.dados{
+.dados {
     display: flex;
     flex-wrap: wrap;
     column-gap: 45%;
     margin-inline: 3%;
 }
 
-#numcard{
+#numcard {
     text-align: center;
     width: 100%;
     font-size: 25px;
@@ -68,7 +68,7 @@
     color: hsl(228, 45%, 44%);
 }
 
-#cardcod{
+#cardcod {
     color: rgb(236, 234, 234);
     float: right;
     margin-top: 23%;
@@ -76,7 +76,7 @@
     font-size: 20px;
 }
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -89,46 +89,58 @@ form{
 
 }
 
-form input{
+form input {
     height: 40px;
     border-radius: 10px;
     border: solid 1px rgb(165, 165, 165);
     padding: 10px;
-    
+
 }
 
-form label{
+form label {
     font-size: 14px;
 }
 
-.inputmaior{
+/* Tirando a estilização padrão do input*/
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Navegador firefox*/
+input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+.inputmaior {
     width: 100%;
 }
 
-.expedicao{
+.expedicao {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 45%;
-    
+
 }
 
-.inputmenor{
+.inputmenor {
     width: 45%;
 }
 
-.inputcod{
+.inputcod {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 51%;
 }
 
-#cardcodinput{
-width: 100%;
+#cardcodinput {
+    width: 100%;
 }
 
-#btnconfirmar{
+#btnconfirmar {
     background-color: rgb(24, 3, 44);
     color: #fff;
     margin-top: 20px;
