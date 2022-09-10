@@ -94,7 +94,8 @@ form input {
     border-radius: 10px;
     border: solid 1px rgb(165, 165, 165);
     padding: 10px;
-
+    outline: none;
+    transition: 300ms;
 }
 
 form label {
