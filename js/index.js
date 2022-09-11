@@ -8,13 +8,21 @@ var cardanoinput = window.document.getElementById('cardanoinput')
 
 var cardcodinput = window.document.getElementById('cardcodinput')
 
+var btnConfirmar = window.document.getElementById('btnconfirmar')
+
 var cardname = document.getElementById('cardname')
 var cardnumber = document.getElementById('numcard')
 var carddate = window.document.getElementById('carddate')
 var cardcod = window.document.getElementById('cardcod')
 
 //clonando os dados no card
-cardnameinput.addEventListener('keyup', () => cardname.innerText = cardnameinput.value)
+cardnameinput.addEventListener('keyup', () => {
+    if (cardnameinput.value.length < 30) {
+        cardname.innerText = cardnameinput.value
+    } else if (cardnameinput.value.length == 30) {
+        cardname.innerText = `${cardnameinput.value}...`
+    }
+})
 
 cardnumberinput.addEventListener('keyup', () => {
     if (cardnumberinput.value.length <= 16) {
@@ -42,23 +50,32 @@ cardnumberinput.addEventListener('keyup', (event) => {
 
 cardmesinput.addEventListener('keydown', (event) => {
     let tecla = event.code;
-    if (event.code != 'Backspace') {
+    if (tecla != 'Backspace' & tecla != 'Delete') {
         if (cardmesinput.value.length >= 2) {
             cardanoinput.focus()
+            cardmesinput.style.border = 'solid 1px rgb(165, 165, 165)'
+                btnConfirmar.removeAttribute('disabled')
+            if (cardmesinput.value > 12) {
+                cardmesinput.style.border = 'solid 1px rgb(180, 28, 28)'
+                btnConfirmar.setAttribute('disabled', true)
+            }
         }
     }
 })
 
-cardanoinput.addEventListener('keydown', () => {
-    if (cardanoinput.value.length == 2) {
-        cardcodinput.focus()
+cardanoinput.addEventListener('keyup', (event) => {
+    let tecla = event.code;
+    if (tecla != 'Backspace' & tecla != 'Delete') {
+        if (cardanoinput.value.length == 4) {
+            cardcodinput.focus()
+        }
     }
 })
 
 
 
 function confirmar() {
-    cardcod.innerHTML = 'deu certo'
+    cardcod.innerHTML = 'DEU CERTO'
 }
 
 

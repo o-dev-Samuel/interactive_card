@@ -44,19 +44,25 @@
 .dados {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 45%;
-    margin-inline: 3%;
+    margin-inline: 1%;
 }
 
 #numcard {
     text-align: center;
     width: 100%;
     font-size: 25px;
-    margin-bottom: 10%;
+    margin-bottom: 10PX;
 }
 
+#cardname{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
 
-
+#carddate{
+    margin-left: 10px;
+}
 
 .attribution {
     font-size: 11px;
