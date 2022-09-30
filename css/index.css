@@ -10,6 +10,7 @@
     background-size: cover;
     height: 200px;
     position: relative;
+    transition: 300ms;
 }
 
 .card {
@@ -92,7 +93,6 @@ form {
     width: 80%;
     max-width: 300px;
     color: #000;
-
 }
 
 form input {
@@ -147,8 +147,27 @@ input {
     width: 100%;
 }
 
+#revisar{
+    margin-top: 10px;
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+#alerta{
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 28, 28, 0.8);
+}
+
 #btnconfirmar {
     background-color: rgb(24, 3, 44);
     color: #fff;
     margin-top: 20px;
 }
+
+
+

@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body id="corpo">
 
   <div id="containercard">
 
@@ -29,7 +29,7 @@
       <div class="dados">
         <div id="numcard">0000 0000 0000 0000</div>
 
-        <div id="cardname" class="block">Samuel Carvalho</div>
+        <div id="cardname" class="block">Seu Nome</div>
 
         <div id="carddate" class="block">00/00</div>
       </div>
@@ -43,7 +43,7 @@
 
   </div>
 
-  <form method="post">
+  <form method="post" id="form">
     <label for="cardnameinput">Titular do cartão</label>
     <input type="text" name="cardnameinput" id="cardnameinput" class="inputmaior" placeholder="Ex: Samuel Carvalho">
 
@@ -52,7 +52,7 @@
 
    <div class="expedicao">
     <label for="cardmesinput">Validade: MM/AA</label>
-    <input type="number" name="cardmesinput" id="cardmesinput" class="inputmenor" placeholder="MM">
+    <input type="number" name="cardmesinput" id="cardmesinput" class="inputmenor" placeholder="MM" maxlength="2">
 
     <input type="number" name="cardanoinput" id="cardanoinput" class="inputmenor" placeholder="AA">
    </div>
@@ -60,8 +60,12 @@
    <div class="inputcod">
     <label for="cardcodinput">CVC</label>
     <input type="number" name="carcodinput" id="cardcodinput" placeholder="Ex:123">
-
    </div>
+   
+    <div id="revisar">
+      <p id="alerta">revise os dados!</p>
+    </div>
+
    <input type="button" value="Confirmar" class="inputmaior" id="btnconfirmar" onclick="confirmar()">
   </form>
 
