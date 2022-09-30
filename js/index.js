@@ -17,6 +17,8 @@ var cardcod = window.document.getElementById('cardcod')
 var revisar = window.document.getElementById('revisar')
 var form = window.document.getElementById('form')
 var containercard = window.document.getElementById('containercard')
+var titulo = window.document.getElementById('titulo')
+var confirmacao = window.document.getElementById('confirmacao')
 
 //clonando os dados no card
 cardnameinput.addEventListener('keyup', (event) => {
@@ -147,6 +149,9 @@ cardcodinput.addEventListener('keyup', (event) => {
 function confirmar() {
     form.style.display = 'none'
     containercard.style.height = '400px'
+    titulo.style.display = 'block'
+    confirmacao.style.display = 'flex'
+
     
 
 }
