@@ -19,6 +19,10 @@ var form = window.document.getElementById('form')
 var containercard = window.document.getElementById('containercard')
 var titulo = window.document.getElementById('titulo')
 var confirmacao = window.document.getElementById('confirmacao')
+var btnCerto = window.document.getElementById('btncerto')
+var finalizacao = window.document.getElementById('finalizacao')
+var btnCorrigir = window.document.getElementById('btncorrigir')
+var btnInicio =window.document.getElementById('btninicio')
 
 //clonando os dados no card
 cardnameinput.addEventListener('keyup', (event) => {
@@ -151,10 +155,25 @@ function confirmar() {
     containercard.style.height = '400px'
     titulo.style.display = 'block'
     confirmacao.style.display = 'flex'
-
-    
-
 }
 
+// Exibindo a div de 'cartão adicionadp'
+btnCerto.addEventListener('click', () => {
+    confirmacao.style.display = 'none'
+    finalizacao.style.display = 'block'
+    containercard.style.height = '200px'
+})
 
+// Exibindo o form para correção
+btnCorrigir.addEventListener('click', () => {
+    form.style.display = 'flex'
+    containercard.style.height = '200px'
+    titulo.style.display = 'none'
+    confirmacao.style.display = 'none'
+})
+
+// Recarregando a página para voltar ao início
+btnInicio.addEventListener('click', () => {
+    location.reload()
+})
 

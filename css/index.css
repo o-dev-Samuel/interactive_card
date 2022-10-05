@@ -211,3 +211,20 @@ h1{
     
 }
 
+#finalizacao{
+    text-align: center;
+    display: none;
+    margin-top: 150px;
+    color: rgb(83, 83, 83);
+}
+
+#btninicio{
+    margin-top: 60px;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(24, 3, 44);
+    color: #fff;
+}
+
