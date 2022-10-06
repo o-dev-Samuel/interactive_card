@@ -162,6 +162,7 @@ btnCerto.addEventListener('click', () => {
     confirmacao.style.display = 'none'
     finalizacao.style.display = 'block'
     containercard.style.height = '200px'
+    titulo.style.display = 'none'
 })
 
 // Exibindo o form para correção
